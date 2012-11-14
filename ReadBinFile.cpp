@@ -12,7 +12,7 @@ using namespace std;
 int main()
 {
 
-	unsigned short* datamatrix;
+	uint16_t* datamatrix;
 	int row = 2157;
 	int column = 2112;	
 	int j;	
@@ -31,7 +31,7 @@ int main()
 	datafile.close();
 	cout << "length of char array is " << size << endl;
 	cout << "the complete file content is in memory" << endl;
-	datamatrix = new (nothrow) unsigned short [size/2];
+	datamatrix = new (nothrow) uint16_t [size/2];
 	if(datamatrix)
 	{
 		memcpy(datamatrix, memblock, size);	
