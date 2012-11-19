@@ -13,9 +13,10 @@ int testEndianess();
 int main()
 {
 
+	//access datamatrix as datamatrix((i*column)+j)
 	uint16_t* datamatrix; // pointer to matrix of loaded data
-	int row = 2157; // rows of data
-	int column = 2112; // columns of data	
+	int row = 2122; // rows of data
+	int column =2157; // columns of data	
 	int j, Endianess;	
 	ifstream::pos_type size;
 	char * memblock; // char array into which we read binary file
@@ -62,8 +63,8 @@ int main()
 	for(j = 0; j < size/2; j++)
 	{
 		outfile << datamatrix[j] ;
-	//	if(j!=(size/2)  && (j+1)%column == 0)
-		if(j!=(size/2)  && (j+1)%row == 0)
+	//	if(j!=(size/2)  && (j+1)%row == 0)
+		if(j!=(size/2)  && (j+1)%column == 0)
 		{
 		outfile << endl;
 	//	cout << "j is " <<j << " and data is: " << datamatrix[j] << endl;
