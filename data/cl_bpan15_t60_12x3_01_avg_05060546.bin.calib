@@ -1,0 +1,10 @@
+imagetype=corrected-q
+dtype=uint16
+horsize=2157
+versize=2112
+region_ulc_x=69.0
+region_ulc_y=93.0
+bcenter_x=1139.36590669
+bcenter_y=1147.25572658
+detect_dist=2660.03968327
+Qconv_const=0.00242412451268
